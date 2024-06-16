@@ -29,8 +29,7 @@ struct Point {
         
 //     }
 // }
-//iiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-// float compare(point )
+
 void Init(Point *point, int num);
 float Violent(Point *point, int num);
 float Distance_nosqrt(Point a, Point b);
