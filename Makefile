@@ -1,18 +1,18 @@
 #CXX = icpx
 CXX = g++
-SRC = $(wildcard ./Src/*.cpp)
+SRC = $(wildcard ./src/*.cpp)
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 TARGET = LeastDis
 CXXFLAGS = -O3 -std=c++17
 $(TARGET): $(OBJ)
-	@$(CXX) $^ -o $@ 
+	$(CXX) $^ -o $@ 
 
 %.o: %.cpp
-	@$(CXX) $(CXXFLAGS) $< -c -o $@
+	$(CXX) $(CXXFLAGS) $< -c -o $@
 
 .PHONY: cl
 cl:
-	@rm -f ./Src/*.o $(TARGET)
+	@rm -f ./src/*.o $(TARGET)
 
 .PHONY: r
 r:
