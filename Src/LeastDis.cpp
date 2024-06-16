@@ -37,6 +37,7 @@ float Distance_nosqrt(Point a, Point b);
 int main(int argc, char *argv[])
 {
 	int num = 3;
+	int a=3;
 	srand(time(NULL));
     Point *point = new Point [num];
 	Init(point, num);
