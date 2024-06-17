@@ -1,7 +1,3 @@
-#ifndef FRESHMAN_H
-#define FRESHMAN_H
-
-
 #include <time.h>
 #ifdef _WIN32
 #	include <windows.h>
@@ -36,6 +32,3 @@ double cpuSecond()
 
 }
 
-
-
-#endif

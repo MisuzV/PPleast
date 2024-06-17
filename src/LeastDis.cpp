@@ -39,8 +39,6 @@ int main(int argc, char *argv[])
     Point *point = new Point [num];
 	Init(point, num);
 	
-	sort(point, point + num, compareByX);
-
 	iStart=cpuSecond();
 	float ViolentLeast = sqrt(Violent(point, num));
 	iElaps=cpuSecond()-iStart;
@@ -50,6 +48,7 @@ int main(int argc, char *argv[])
 
 #ifdef start
 	iStart=cpuSecond();
+	sort(point, point + num, compareByX);
 	float Myleast = sqrt(MyPPleast(point, num));
 	iElaps=cpuSecond()-iStart;
 	cout << "My cost " << setprecision(4) << iElaps * 1000 << "ms" <<endl;
