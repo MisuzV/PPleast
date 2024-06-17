@@ -3,7 +3,7 @@ CXX = g++
 SRC = $(wildcard ./src/*.cpp)
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 TARGET = LeastDis
-CXXFLAGS = -O3 -std=c++17
+CXXFLAGS = -O3 -std=c++17 
 $(TARGET): $(OBJ)
 	$(CXX) $^ -o $@ 
 
@@ -17,3 +17,4 @@ cl:
 .PHONY: r
 r:
 	@./$(TARGET)
+
